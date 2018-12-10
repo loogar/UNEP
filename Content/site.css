@@ -1,0 +1,397 @@
+﻿/* styles for validation helpers */
+.field-validation-error
+{
+	color: #e80c4d !important;
+	font-weight: bold !important;
+}
+
+span.field-validation-error span
+{
+	color: #e80c4d !important;
+	font-weight: bold !important;
+}
+
+.field-validation-valid
+{
+	display: none;
+}
+
+.input-validation-error
+{
+	border: 1px solid #e80c4d !important;
+}
+
+input[type="text"].input-validation-error, input[type="password"].input-validation-error
+{
+	border: 1px solid #e80c4d !important;
+}
+
+.validation-summary-errors
+{
+	color: #e80c4d !important;
+	font-weight: bold !important;
+	font-size: 1.1em !important;
+}
+
+.validation-summary-valid
+{
+	display: none;
+}
+/*pop up*/
+.pop-up
+{
+	background: #fff;
+	padding: 5px;
+	margin: 10px auto auto;
+	min-width: 450px;
+	min-height: 300px;
+}
+.pop-up-confirm
+{
+	background: #fff;
+	padding: 5px;
+	margin: 10px auto auto;
+	position: relative;
+	min-width: 300px;
+	min-height: 150px;
+	text-align: center;
+}
+.close-pop-up
+{
+	background: url(../Images/login-cross.png);
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+}
+
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    text-indent:-9999px;
+    background: url('img/icon_top.png') no-repeat;
+}
+
+/**  Son - BIPVN - add - 11032015  **/
+.label_input {
+    background:#f8f8f8 !important;
+    padding: 5px 10px;
+    height: 20px;
+	border-radius:4px;
+    border: 1px solid #ccc;
+    font-size: 12px !important;
+    color: #555 !important;
+    font-weight:400 !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+
+
+.program-impact-form .label_input
+{    
+   
+   margin: 0 0 10px 0 !important;
+   padding: 4px 6px !important;
+}
+
+.subtitle{
+    font-weight:normal !important;
+}
+.no-margin-left{
+    margin-left: 0 !important;
+}
+.no-margin-right{
+    margin-right: 0 !important;
+}
+.no-padding-top{
+    padding-top: 0 !important;
+}
+.no-padding-bottom{
+    padding-bottom: 0 !important;
+}
+.no-padding{
+    padding: 0 !important;
+}
+.scroll-x{
+    overflow-x:scroll;
+}
+.table_scroll{
+    margin-bottom: 10px;
+}
+.table_scroll .static_table table{
+    border-top-right-radius:0 !important;
+    border-bottom-right-radius:0 !important;
+	border-left: 0 !important;
+}
+.table_scroll .scroll-x table{
+    border-top-left-radius:0 !important;
+    border-left:0 none !important;
+    border-bottom-left-radius:0 !important;
+	margin-bottom:0;
+}
+.table_scroll .scroll-x table th, .table_scroll .scroll-x td, .table_scroll .scroll-x td input{
+    text-align:right;
+}
+.table_scroll .scroll-x td input {
+    background: none;
+    border: 1px solid transparent;
+    box-shadow: none;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	min-width:50px;
+}
+.table_scroll .scroll-x td, .table_scroll .scroll-x th, .table_scroll .static_table th, .table_scroll .static_table td {
+	border-left:1px solid #ccc;
+}
+.table_scroll .scroll-x tr td:first-child, .table_scroll .scroll-x tr th:first-child{
+	border-left:0 !important;
+}
+
+_:-ms-fullscreen, :root .table_scroll table tr td, .table_scroll table tr th { 
+    line-height:30px !important;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .table_scroll table tr td, .table_scroll table tr th { 
+        line-height:30px !important;
+    }
+}
+
+.table_scroll .scroll-x td input:hover, .table_scroll .scroll-x td input:focus{
+    border: 1px solid #ccc;
+}
+.table_scroll .scroll-x > div {
+    width: 200%;
+}
+.table_scroll .no-margin-left td span {
+    clear: both;
+    float: left;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 3px 1.85%;
+    width: 96.4%;
+}
+.table_scroll .no-margin-left td > span:nth-child(2n+1){
+    //background-color: #f9f9f9;
+}
+.table_scroll .no-margin-left td > span:nth-child(2n){
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+.table th, .table td{
+	padding: 0 8px !important;
+}
+
+.table_scroll .table-striped tbody > tr > td,.table_scroll .table-striped tbody > tr > th{
+	background:none !important;
+}
+.right{
+	text-align:right !important;
+}
+.center{
+	text-align:center !important;
+}
+.left{
+	text-align:left !important;
+}
+.no-border{
+	border-color:transparent !important;
+}
+.no_border_top{
+	border-top-color:transparent !important;
+}
+.zoom2x5{
+	width: 250% !important;
+}
+.zoom3x{
+	width: 300% !important;
+}
+.zoom4x{
+	width: 400% !important;
+}
+.zoom5x{
+	width: 500% !important;
+}
+#loadding {
+    background: none repeat scroll 0 0 #fff;
+    display: none;
+    float: none;
+    height: 70%;
+    left: 0;
+    margin: 0 auto;
+    opacity: 0.6;
+    padding-top: 25%;
+    position: fixed;
+    text-align: center;
+    top: 0%;
+    width: 100%;
+    z-index: 100000;
+}
+
+#loadding > p {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 1px #000;
+}
+
+.img_loading{
+	display:none;
+}
+.chart_box {
+    border: 1px solid #ccc;
+    float: left;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    padding: 1%;
+    width: 46%;
+}
+.chart_box1 {
+    border: 1px solid #ccc;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+.control-error{
+    border-color: #b94a48 !important; 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+.upfirstCharOfSentence,.upfirstCharOfSentence b{
+    text-transform:lowercase !important;
+    font-size:12px;
+    font-weight:bold;
+}
+.upfirstCharOfSentence:first-letter{
+    text-transform:uppercase !important;
+}
+.upfirstCharOfWord{
+    text-transform:capitalize !important;
+}
+.upperSentence{
+    text-transform:uppercase !important;
+}
+
+
+/**  end Son BIPVN  **/
+
+.text-justify {
+  text-align: justify;
+}
+
+/*! 
+ * angular-loading-bar v0.8.0
+ * https://chieffancypants.github.io/angular-loading-bar
+ * Copyright (c) 2015 Wes Cruver
+ * License: MIT
+ */
+#loading-bar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+#loading-bar-spinner {
+    pointer-events: none;
+    -webkit-pointer-events: none;
+    -webkit-transition: 350ms linear all;
+    -moz-transition: 350ms linear all;
+    -o-transition: 350ms linear all;
+    transition: 350ms linear all;
+}
+
+#loading-bar-spinner {
+    display: block;
+    position: fixed;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+}
+
+    #loading-bar-spinner .spinner-icon {
+        width: 40px;
+        height: 40px;
+        border: solid 2px transparent;
+        border-top-color: #1aae88;
+        border-left-color: #1aae88;
+        border-radius: 50%;
+        -webkit-animation: loading-bar-spinner 400ms linear infinite;
+        -moz-animation: loading-bar-spinner 400ms linear infinite;
+        -ms-animation: loading-bar-spinner 400ms linear infinite;
+        -o-animation: loading-bar-spinner 400ms linear infinite;
+        animation: loading-bar-spinner 400ms linear infinite;
+    }
+
+@-webkit-keyframes loading-bar-spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes loading-bar-spinner {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes loading-bar-spinner {
+    0% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes loading-bar-spinner {
+    0% {
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading-bar-spinner {
+    0% {
+        transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

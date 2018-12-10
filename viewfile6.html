@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>UNEP</title>
+	<link href="/moit.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width" />
+	
+	
+   <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="Content/themes/base/jquery.ui.core.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.resizable.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.selectable.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.accordion.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.button.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.dialog.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.slider.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.tabs.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.datepicker.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.progressbar.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.theme.css" rel="stylesheet" />
+	<link href="Content/colorbox.css" rel="stylesheet" />
+	<link href="Content/bootstrap.min.css" rel="stylesheet" />
+	<link href="Content/bootstrap-multiselect.css" rel="stylesheet" />
+	<link href="Content/prettify.css" rel="stylesheet" />
+	<link href="Content/date-picker.css" rel="stylesheet" />
+	<link href="Content/style.css" rel="stylesheet" />
+	<link href="Content/site.css" rel="stylesheet" />
+	<link href="Content/upload/uploadify.css" rel="stylesheet" />
+	<link href="Content/publish.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container">
+		<header>
+            
+
+<img src="header/header.png" width="852" height="120" id="logo" usemap="#logoMap">
+<map id="logoMap" name="logoMap"><area shape="rect" alt="unep" title="" coords="1,1,100,119" href="http://www.unep.org/" target="_blank" /><area shape="rect" alt="enlighten" title="" coords="153,0,345,116" href="http://www.enlighten-initiative.org/" target="_blank" /><area shape="rect" alt="lites" title="" coords="379,2,618,117" href="http://www.lites.asia/" target="_blank" /><area shape="rect" alt="australianaid" title="" coords="668,1,851,117" href="https://australianaid.org/" target="_blank" /></map>
+
+<div id="account" class="pull-right">
+    <p>Applicant: applicant.product.registry@gmail.com </p>
+    <a href="login.html" class="rounded btn btn-primary">Log out</a>
+
+</div>
+
+<div id="menu" class="rounded">
+    <a href="/" class="brand pull-left"><i class="fa fa-home"></i></a>
+    <ul class="nav nav-pills pull-left">
+					<li>
+						<a href="applicant.html" class="rounded"> Make an application</a>
+					</li>
+					<li>
+						<a href="searchrecords.html" class="rounded"> Search my records</a>
+					</li>
+					<li>
+						<a href="under.html" class="rounded"> Payments</a>
+					</li>
+					<li class="active">
+						<a href="salesdata.html" class="rounded"> Sales data</a>
+					</li>
+					<li>
+						<a href="testorg.html" class="rounded"> Test Organisation</a>
+					</li>
+					<li>
+						<a href="under.html" class="rounded"> News</a>
+					</li>
+					<li>
+						<a href="under.html" class="rounded"> Site manager</a>
+					</li>
+					<li>
+						<a href="help.html" class="rounded"> Help</a>
+					</li>
+
+				</ul>
+    
+</div>
+
+            <div class="infoView">
+                <div class="span8">
+    <b>Record No: #000224 Distribution transformers</b>
+
+                </div>
+            </div>
+        </header>
+		<div class="row-fluid">
+			<div class="span9">
+				<ul class="breadcrumb rounded">
+					
+    <a href="/">Home</a>
+
+    
+        &gt;
+    
+    <a href="applicant.html">Registrations</a>
+
+    
+        &gt;
+    View facility / Notes
+
+    
+				</ul>
+				<div class="menu-tab">
+					
+    <input type="hidden" id="CurrentView" name="CurrentView" value="ViewFacilityNotes" />
+    <ul class="nav nav-tabs">
+						<li id="menu_tab_Aministrative"><a href="viewfile.html">Administrative Details</a>
+						</li>
+						<li id="menu_tab_Product"><a href="viewfile2.html">Product Details</a></li>
+						<li id="menu_tab_TestResults"><a href="viewfile3.html">Test Results</a></li>
+						<li id="menu_tab_LabellingPerformance"><a href="viewfile4.html">Labelling &amp; Performance</a></li>
+						<li id="menu_tab_UploadedFile"><a href="viewfile5.html">Uploaded file manager</a></li>
+						<li class="active"  id="menu_tab_Notes"><a href="viewfile6.html">Notes</a></li>
+					</ul>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var CurrentView = $('#CurrentView').val();
+
+        if (CurrentView == 'ViewFacilityOverview')
+            $('#menu_tab_Aministrative').addClass('active');
+        else if (CurrentView == 'ViewFacilityProductDetail')
+            $('#menu_tab_Product').addClass('active');
+        else if (CurrentView == 'ViewFacilityTestDetail')
+            $('#menu_tab_TestResults').addClass('active');
+        else if (CurrentView == 'ViewLabellingPerformance')
+            $('#menu_tab_LabellingPerformance').addClass('active');
+        else if (CurrentView == 'ViewFacilityFileUpload')
+            $('#menu_tab_UploadedFile').addClass('active');
+        else if (CurrentView == 'ViewFacilityNotes')
+            $('#menu_tab_Notes').addClass('active');
+    });
+</script>
+
+
+				</div>
+				<article id="content">
+                
+
+<div class="view-facility-notes">
+
+
+<h4 class="title" id="idRegulatory">
+    Notes
+</h4>
+<section class="section-sepecial">
+    <div class="row-fluid">
+<form action="/Application/ViewFacilityNotes?recordNo=224" method="post">    <textarea  name="idViewFacilityNote" id="idViewFacilityNote" class="span12" rows="10"></textarea>
+    <input type="hidden" name="AdminId" value= 224 />
+    <input type="submit" class="btn btn-primary pull-right" value="Save" name="Country manufacture" />
+</form>    </div>
+    </div>
+</section>
+
+
+
+<a href="#" class="scrollup">Scroll</a>
+<script type="text/javascript">
+    ViewProduct.Scrollup();
+</script>
+            </article>
+			</div>
+			<aside class="span3">
+<div class="row-fluid">
+                    <h5>Status</h5>
+                    <section class="status">
+                        Draft
+                    </section>
+                </div>
+                <div class="row-fluid">
+                    <h5>Info</h5>
+                    <section>
+                        <div class="row-fluid">
+                            <div class="span5 text-right">
+                                <span>ID:</span>
+                            </div>
+                            <div class="span6">
+                                000224
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span5 text-right">
+                                <span>Last updated:</span>
+                            </div>
+                            <div class="span6">
+                                2018/12/06
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span5 text-right">
+                                <span>Status:</span>
+                            </div>
+                            <div class="span6">
+                                Draft
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="row-fluid">
+                    <h5>Action</h5>
+                    <section class="text-center">
+                        <ul class="unstyled">
+                                        <li><a href="editfile.html" class="btn btn-primary">Edit registration</a></li>   
+                                    <li><a href="javascript:void(-1);" onclick="" class="btn btn-primary">Create Copy</a></li>
+                                        <li><a href="" target="_blank" class="btn btn-primary">Export to PDF</a></li>
+                        </ul>
+                    </section>
+                </div>
+
+<!-- Modal -->
+<div id="noteModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Note</h3>
+    </div>
+    <div class="modal-body">
+        <p style="font-size: 1.2em;line-height: 1.4em;text-align: justify;">This facility is intended to generate a certificate of registration approval and would include details such as; Approval authority, registration number, Product registrant details, registration standard,  brand, model/s, registration date, expiry date. The exact form of the certificate would need to be tailored to the requirements of the approving authority (country).</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+            </aside>
+		</div>
+		<footer>
+            <div class="row-fluid">
+    <div class="span5">
+        <h4>A joint initiative of the Australian Government and UNEP</h4>
+       
+    </div>
+    <div class="span7">
+        <div class="row-fluid">
+            <div class="span6">
+                Comments to: ...
+            </div>
+            <div class="span6">
+                Contact number: ...
+            </div>
+        </div>
+        <ul>
+						<li>United Nations Environment Programme (UNEP)</li>
+						<li><a href="under.html">Privacy</a></li>
+						<li><a href="copy.html">Copyright & Disclaimer </a></li>
+						<li class="last-child"><a href="under.html">Sitemap</a></li>
+					</ul>
+    </div>
+</div>
+
+        </footer>
+	</div>
+
+    
+    
+	
+	
+</body>
+</html>

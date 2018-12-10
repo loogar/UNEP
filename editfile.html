@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>UNEP</title>
+	<link href="/moit.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width" />
+	<script src="/Scripts/jquery-1.7.1.min.js"></script>
+
+
+
+
+
+	<link rel="stylesheet" href="maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="Content/themes/base/jquery.ui.core.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.resizable.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.selectable.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.accordion.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.button.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.dialog.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.slider.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.tabs.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.datepicker.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.progressbar.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.theme.css" rel="stylesheet" />
+	<link href="Content/colorbox.css" rel="stylesheet" />
+	<link href="Content/bootstrap.min.css" rel="stylesheet" />
+	<link href="Content/bootstrap-multiselect.css" rel="stylesheet" />
+	<link href="Content/prettify.css" rel="stylesheet" />
+	<link href="Content/date-picker.css" rel="stylesheet" />
+	<link href="Content/style.css" rel="stylesheet" />
+	<link href="Content/site.css" rel="stylesheet" />
+	<link href="Content/upload/uploadify.css" rel="stylesheet" />
+	<link href="Content/publish.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+	<div class="container">
+		<header>
+
+
+			<img src="header/header.png" width="852" height="120" id="logo" usemap="#logoMap">
+			<map id="logoMap" name="logoMap"><area shape="rect" alt="unep" title="" coords="1,1,100,119" href="http://www.unep.org/" target="_blank" /><area shape="rect" alt="enlighten" title="" coords="153,0,345,116" href="http://www.enlighten-initiative.org/" target="_blank" /><area shape="rect" alt="lites" title="" coords="379,2,618,117" href="http://www.lites.asia/" target="_blank" /><area shape="rect" alt="australianaid" title="" coords="668,1,851,117" href="https://australianaid.org/" target="_blank" /></map>
+
+			<div id="account" class="pull-right">
+				<p>Applicant: applicant.product.registry@gmail.com </p>
+				<a href="login.html" class="rounded btn btn-primary">Log out</a>
+
+			</div>
+
+			<div id="menu" class="rounded">
+				<a href="/" class="brand pull-left"><i class="fa fa-home"></i></a>
+				<ul class="nav nav-pills pull-left">
+					<li>
+						<a href="applicant.html" class="rounded"> Make an application</a>
+					</li>
+					<li>
+						<a href="searchrecords.html" class="rounded"> Search my records</a>
+					</li>
+					<li>
+						<a href="under.html" class="rounded"> Payments</a>
+					</li>
+					<li class="active">
+						<a href="salesdata.html" class="rounded"> Sales data</a>
+					</li>
+					<li>
+						<a href="testorg.html" class="rounded"> Test Organisation</a>
+					</li>
+					<li>
+						<a href="under.html" class="rounded"> News</a>
+					</li>
+					<li>
+						<a href="under.html" class="rounded"> Site manager</a>
+					</li>
+					<li>
+						<a href="help.html" class="rounded"> Help</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div class="infoVer">
+				<div class="span8">
+					<b>Record No: #000224 Distribution transformers</b> <span class="pull-right">Form
+						version: TCVN 8525:2010 V1.0</span>
+
+				</div>
+			</div>
+		</header>
+		<ul class="breadcrumb rounded">
+
+			<a href="/">Home</a>
+
+
+			&gt;
+
+			<a href="applicant.html">Registrations</a>
+
+
+			&gt;
+			Register a product
+
+
+		</ul>
+		<article id="content">
+			<div class="row-fluid">
+				<div class="span3">
+					<ul class="nav nav-list sidebar unstyled">
+						<li><a href="editfile.html"><span class="active complete ">Registration type</span></a></li>
+						<li><a href="editfile2.html"><span class="">Administrative details</span></a></li>
+						<li><a href="editfile3.html"><span class="">Product details</span></a></li>
+						<li><a href="editfile4.html"><span class="">Test results</span></a></li>
+						<li><a href="editfile5.html"><span class="">Labelling &amp; Performance</span></a></li>
+						<li><a href="editfile6.html"><span class="">File uploads</span></a></li>
+						<li><a href="editfile7.html"><span>Declaration &amp; Submit</span></a></li>
+
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="span9 pull-right">
+
+					<form action="" class="active-form form-horizontal" method="post">
+						<p>To initiate a product registration application select the required product type then left mouse click on the “Save and Continue” button</p>
+						<div class="control-group">
+							<label>Country where applicant is applying for registration: <span>*</span></label>
+							<select class="rounded span4" id="CountryRegistration" name="CountryRegistration">
+								<option selected="selected" value="BRU">Brunei</option>
+								<option value="CAM">Cambodia</option>
+								<option value="INA">Indonesia</option>
+								<option value="LAO">Laos</option>
+								<option value="MAS">Malaysia</option>
+								<option value="MYA">Myanmar (Burma)</option>
+								<option value="PHI">Philippines</option>
+								<option value="SIN">Singapore</option>
+								<option value="THA">Thailand</option>
+								<option value="VIE">Vietnam</option>
+							</select>
+
+						</div>
+						<div class="control-group">
+							<label>Select the type of product you wish to register: <span>*</span></label>
+							<select class="rounded span4" data-val="true" data-val-required="Error: This is required input, please complete this field" disabled="disabled" id="ListProductType" name="ProductType">
+								<option selected="selected" value="01">Distribution transformers</option>
+								<option value="03">Compact Fluorescent Lamps</option>
+								<option value="04">Tubular fluorescent lamps</option>
+								<option value="05">Ballasts</option>
+								<option value="06">Electric fans</option>
+								<option value="07">Refrigerator/Freezers</option>
+								<option value="08">Air-conditioners</option>
+								<option value="09">Washing machines</option>
+								<option value="10">Rice Cookers</option>
+								<option value="11">Electric motors</option>
+								<option value="12">Television</option>
+							</select>
+
+						</div>
+						<div class="control-group">
+							<label>Energy Performance Standard: <span>*</span></label>
+							<select class="rounded span4" data-val="true" data-val-required="Error: This is required input, please complete this field" id="RegistrationStandard" name="ReqStd">
+								<option selected="selected" value="010">TCVN 8525:2010 Edition 1</option>
+							</select>
+
+						</div>
+						<input type="submit" value="Save &amp; continue &gt;&gt;" class="btn btn-primary rounded" />
+						<input type="hidden" id="ReqStdSelectedValue" value="010" />
+					</form>
+					<script type="text/javascript">
+						$('#ReqStd').val($('#ReqStdSelectedValue').val()).attr('selected', true);
+
+					</script>
+
+				</div>
+			</div>
+		</article>
+		<footer>
+			<div class="row-fluid">
+				<div class="span5">
+					<h4>A joint initiative of the Australian Government and UNEP</h4>
+					<p>
+						Server side compilation timer: 0.00s</p>
+				</div>
+				<div class="span7">
+					<div class="row-fluid">
+						<div class="span6">
+							Comments to: ...
+						</div>
+						<div class="span6">
+							Contact number: ...
+						</div>
+					</div>
+					<ul>
+						<li>United Nations Environment Programme (UNEP)</li>
+						<li><a href="under.html">Privacy</a></li>
+						<li><a href="copy.html">Copyright & Disclaimer </a></li>
+						<li class="last-child"><a href="under.html">Sitemap</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>UNEP</title>
+	<link href="/moit.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width" />
+
+
+	<link rel="stylesheet" href="maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="Content/themes/base/jquery.ui.core.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.resizable.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.selectable.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.accordion.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.button.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.dialog.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.slider.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.tabs.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.datepicker.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.progressbar.css" rel="stylesheet" />
+	<link href="Content/themes/base/jquery.ui.theme.css" rel="stylesheet" />
+	<link href="Content/colorbox.css" rel="stylesheet" />
+	<link href="Content/bootstrap.min.css" rel="stylesheet" />
+	<link href="Content/bootstrap-multiselect.css" rel="stylesheet" />
+	<link href="Content/prettify.css" rel="stylesheet" />
+	<link href="Content/date-picker.css" rel="stylesheet" />
+	<link href="Content/style.css" rel="stylesheet" />
+	<link href="Content/site.css" rel="stylesheet" />
+	<link href="Content/upload/uploadify.css" rel="stylesheet" />
+	<link href="Content/publish.css" rel="stylesheet" />
+
+
+
+
+
+</head>
+
+<body>
+	<div class="container">
+		<header>
+
+
+			<img src="header/header.png" width="852" height="120" id="logo">
+			<map id="logoMap" name="logoMap"><area shape="rect" alt="unep" title="" coords="1,1,100,119" href="http://www.unep.org/" target="_blank" /><area shape="rect" alt="enlighten" title="" coords="153,0,345,116" href="http://www.enlighten-initiative.org/" target="_blank" /><area shape="rect" alt="lites" title="" coords="379,2,618,117" href="http://www.lites.asia/" target="_blank" /><area shape="rect" alt="australianaid" title="" coords="668,1,851,117" href="https://australianaid.org/" target="_blank" /></map>
+
+			<div id="account" class="pull-right">
+				<p>Applicant: applicant.product.registry@gmail.com </p>
+				<a href="login.html" class="rounded btn btn-primary">Log out</a>
+
+			</div>
+
+			<div id="menu" class="rounded">
+				<a href="applicant.html" class="brand pull-left"><i class="fa fa-home"></i></a>
+				<ul class="nav nav-pills pull-left">
+					<li>
+						<a href="applicant.html" class="rounded"> Make an application</a>
+					</li>
+					<li>
+						<a href="searchrecords.html" class="rounded"> Search my records</a>
+					</li>
+					<li>
+						<a href="under.html" class="rounded"> Payments</a>
+					</li>
+					<li>
+						<a href="salesdata.html" class="rounded"> Sales data</a>
+					</li>
+					<li class="active">
+						<a href="testorg.html" class="rounded"> Test Organisation</a>
+					</li>
+					<li>
+						<a href="under.html" class="rounded"> News</a>
+					</li>
+					<li>
+						<a href="under.html" class="rounded"> Site manager</a>
+					</li>
+					<li>
+						<a href="help.html" class="rounded"> Help</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</header>
+		<ul class="breadcrumb rounded">
+
+			<a href="applicant.html">Home</a>
+
+
+			&gt;
+			Testing Organisations
+
+
+		</ul>
+		<article id="content">
+
+			
+			<h6>
+				Database of Testing Organisation</h6>
+			<div style="text-align: center; font-weight: bold;">Currently Approved Testing Organisations<br />
+				<br />
+			</div>
+			<div>The list below provides details of the currently approved testing organisations<br />
+				<br />
+			</div>
+			<div>If your laboratory appears on this list then no further action is required (you can proceed to undertake a product registration using the particular testing organisation).<br />
+				<br />
+			</div>
+			<div>If your laboratory does not appear on this list then left mouse click on the “Register a Testing Organisation” button below the list and complete the on-line application form.<br />
+				<br />
+			</div>
+
+			<section>
+				<form action="" class="frm-search-nornal" method="get">
+					<div class="control-group offset1">
+						<div class="row-fluid">
+							<div class="span2">
+								<label class="help-inline">Testing Organisation ID</label>
+								<input id="recordId" name="recordId" type="text" class="rounded span12" />
+							</div>
+							<div class="span3">
+								<label class="help-inline">Name of Testing Organisation</label>
+								<input id="name" name="name" type="text" class="rounded span12" />
+							</div>
+							<div class="span3">
+								<label class="help-inline">Country</label>
+								<select class="rounded span12" id="country" name="country">
+									<option selected="selected" value="0">All</option>
+									<option value="AFG">Afghanistan</option>
+									<option value="ALB">Albania</option>
+									<option value="ALG">Algeria</option>
+									<option value="ASA">American Samoa*</option>
+									<option value="AND">Andorra</option>
+									<option value="ANG">Angola</option>
+									<option value="ANT">Antigua and Barbuda</option>
+									<option value="ARG">Argentina</option>
+									<option value="ARM">Armenia</option>
+									<option value="ARU">Aruba*</option>
+									<option value="AUS">Australia</option>
+									<option value="ANZ">Australasia</option>
+									<option value="AUT">Austria</option>
+									<option value="AZE">Azerbaijan</option>
+									<option value="BAH">The Bahamas</option>
+									<option value="BRN">Bahrain</option>
+									<option value="BAN">Bangladesh</option>
+									<option value="BAR">Barbados</option>
+									<option value="BLR">Belarus</option>
+									<option value="BEL">Belgium</option>
+									<option value="BIZ">Belize</option>
+									<option value="BER">Bermuda*</option>
+									<option value="BEN">Benin</option>
+									<option value="BHU">Bhutan</option>
+									<option value="BOL">Bolivia</option>
+									<option value="BIH">Bosnia and Herzegovina</option>
+									<option value="BOT">Botswana</option>
+									<option value="BRA">Brazil</option>
+									<option value="IVB">British Virgin Islands*</option>
+									<option value="BRU">Brunei</option>
+									<option value="BUL">Bulgaria</option>
+									<option value="BUR">Burkina Faso</option>
+									<option value="BDI">Burundi</option>
+									<option value="CAM">Cambodia</option>
+									<option value="CMR">Cameroon</option>
+									<option value="CAN">Canada</option>
+									<option value="CPV">Cape Verde</option>
+									<option value="CAY">Cayman Islands*</option>
+									<option value="CAF">Central African Republic</option>
+									<option value="CHA">Chad</option>
+									<option value="CHI">Chile</option>
+									<option value="CHN">China</option>
+									<option value="COL">Colombia</option>
+									<option value="COM">Comoros</option>
+									<option value="CGO">Congo, Republic of the</option>
+									<option value="COD">Congo, Democratic</option>
+									<option value="COK">Republic of the Cook Islands*</option>
+									<option value="CRC">Costa Rica</option>
+									<option value="CIV">Cote d&#39;&#39;Ivoire</option>
+									<option value="CRO">Croatia</option>
+									<option value="CUB">Cuba</option>
+									<option value="CYP">Cyprus</option>
+									<option value="CZE">Czech Republic</option>
+									<option value="DEN">Denmark</option>
+									<option value="DJI">Djibouti</option>
+									<option value="DMA">Dominica</option>
+									<option value="DOM">Dominican Republic</option>
+									<option value="TLS">East Timor (Timor-Leste)</option>
+									<option value="ECU">Ecuador</option>
+									<option value="EGY">Egypt</option>
+									<option value="ESA">El Salvador</option>
+									<option value="GEQ">Equatorial Guinea</option>
+									<option value="ERI">Eritrea</option>
+									<option value="EST">Estonia</option>
+									<option value="ETH">Ethiopia</option>
+									<option value="FIJ">Fiji</option>
+									<option value="FIN">Finland</option>
+									<option value="FRA">France</option>
+									<option value="GAB">Gabon</option>
+									<option value="GAM">The Gambia</option>
+									<option value="GEO">Georgia</option>
+									<option value="GER">Germany</option>
+									<option value="GHA">Ghana</option>
+									<option value="GRE">Greece</option>
+									<option value="GRN">Grenada</option>
+									<option value="GUM">Guam*</option>
+									<option value="GUA">Guatemala</option>
+									<option value="GUI">Guinea</option>
+									<option value="GBS">Guinea-Bissau</option>
+									<option value="GUY">Guyana</option>
+									<option value="HAI">Haiti</option>
+									<option value="HON">Honduras</option>
+									<option value="HKG">Hong Kong*</option>
+									<option value="HUN">Hungary</option>
+									<option value="ISL">Iceland</option>
+									<option value="IND">India</option>
+									<option value="IOA">Individual Olympic athletes</option>
+									<option value="INA">Indonesia</option>
+									<option value="IRI">Iran</option>
+									<option value="IRQ">Iraq</option>
+									<option value="IRL">Ireland</option>
+									<option value="ISR">Israel</option>
+									<option value="ITA">Italy</option>
+									<option value="JAM">Jamaica</option>
+									<option value="JPN">Japan</option>
+									<option value="JOR">Jordan</option>
+									<option value="KAZ">Kazakhstan</option>
+									<option value="KEN">Kenya</option>
+									<option value="PRK">Korea, North&#160;(PDR of Korea)</option>
+									<option value="KOR">Korea, South</option>
+									<option value="KUW">Kuwait</option>
+									<option value="KGZ">Kyrgyzstan</option>
+									<option value="LAO">Laos</option>
+									<option value="LAT">Latvia</option>
+									<option value="LIB">Lebanon</option>
+									<option value="LES">Lesotho</option>
+									<option value="LBR">Liberia</option>
+									<option value="LBA">Libya</option>
+									<option value="LIE">Liechtenstein</option>
+									<option value="LTU">Lithuania</option>
+									<option value="LUX">Luxembourg</option>
+									<option value="MKD">Macedonia</option>
+									<option value="MAD">Madagascar</option>
+									<option value="MAW">Malawi</option>
+									<option value="MAL">Malaya</option>
+									<option value="MAS">Malaysia</option>
+									<option value="MDV">Maldives</option>
+									<option value="MLI">Mali</option>
+									<option value="MLT">Malta</option>
+									<option value="MTN">Mauritania</option>
+									<option value="MRI">Mauritius</option>
+									<option value="MEX">Mexico</option>
+									<option value="FSM">Micronesia (Federated States of)</option>
+									<option value="ZZX">Mixed Team&#160;(1896 to 1904)</option>
+									<option value="MDA">Moldova</option>
+									<option value="MON">Monaco</option>
+									<option value="MGL">Mongolia</option>
+									<option value="MAR">Morocco</option>
+									<option value="MOZ">Mozambique</option>
+									<option value="MYA">Myanmar (Burma)</option>
+									<option value="NAM">Namibia</option>
+									<option value="NRU">Nauru</option>
+									<option value="NEP">Nepal</option>
+									<option value="NED">Netherlands</option>
+									<option value="AHO">Netherlands Antilles*</option>
+									<option value="NZL">New Zealand</option>
+									<option value="NCA">Nicaragua</option>
+									<option value="NIG">Niger</option>
+									<option value="NGR">Nigeria</option>
+									<option value="NOR">Norway</option>
+									<option value="OMA">Oman</option>
+									<option value="PAK">Pakistan</option>
+									<option value="PLW">Palau</option>
+									<option value="PLE">Palestine*</option>
+									<option value="PAN">Panama</option>
+									<option value="PNG">Papua New Guinea</option>
+									<option value="PAR">Paraguay</option>
+									<option value="PER">Peru</option>
+									<option value="PHI">Philippines</option>
+									<option value="POL">Poland</option>
+									<option value="POR">Portugal</option>
+									<option value="PUR">Puerto Rico*</option>
+									<option value="QAT">Qatar</option>
+									<option value="ROU">Romania</option>
+									<option value="RUS">Russian Federation</option>
+									<option value="RWA">Rwanda</option>
+									<option value="SKN">Saint Kitts and Nevis</option>
+									<option value="LCA">Saint Lucia</option>
+									<option value="VIN">Saint Vincent and the Grenadines</option>
+									<option value="SAM">Samoa</option>
+									<option value="SMR">San Marino</option>
+									<option value="STP">Sao Tome and Principe</option>
+									<option value="KSA">Saudi Arabia</option>
+									<option value="SEN">Senegal</option>
+									<option value="SCG">Serbia and Montenegro</option>
+									<option value="SEY">Seychelles</option>
+									<option value="SLE">Sierra Leone</option>
+									<option value="SIN">Singapore</option>
+									<option value="SVK">Slovakia</option>
+									<option value="SLO">Slovenia</option>
+									<option value="SOL">Solomon Islands</option>
+									<option value="SOM">Somalia</option>
+									<option value="RSA">South Africa</option>
+									<option value="ESP">Spain</option>
+									<option value="SRI">Sri Lanka</option>
+									<option value="SUD">Sudan</option>
+									<option value="SUR">Suriname</option>
+									<option value="SWZ">Swaziland</option>
+									<option value="SWE">Sweden</option>
+									<option value="SUI">Switzerland</option>
+									<option value="SYR">Syria</option>
+									<option value="TPE">Taiwan&#160;(Chinese Taipei)</option>
+									<option value="TJK">Tajikistan</option>
+									<option value="TAN">Tanzania</option>
+									<option value="THA">Thailand</option>
+									<option value="TOG">Togo</option>
+									<option value="TGA">Tonga</option>
+									<option value="TRI">Trinidad and Tobago</option>
+									<option value="TUN">Tunisia</option>
+									<option value="TUR">Turkey</option>
+									<option value="TKM">Turkmenistan</option>
+									<option value="UGA">Uganda</option>
+									<option value="UKR">Ukraine</option>
+									<option value="EUN">Unified Team</option>
+									<option value="EUA">Unified Team of Germany</option>
+									<option value="UAE">United Arab Emirates</option>
+									<option value="RAU">United Arab Republic</option>
+									<option value="GBR">United Kingdom (Great Britain)</option>
+									<option value="USA">United States</option>
+									<option value="URU">Uruguay</option>
+									<option value="UZB">Uzbekistan</option>
+									<option value="VAN">Vanuatu</option>
+									<option value="VEN">Venezuela</option>
+									<option value="VIE">Vietnam</option>
+									<option value="ISV">Virgin Islands*</option>
+									<option value="WIF">West Indies Federation&#160;(Antilles)</option>
+									<option value="YEM">Yemen</option>
+									<option value="ZAM">Zambia</option>
+									<option value="ZIM">Zimbabwe</option>
+								</select>
+							</div>
+						</div>
+						<div class="row-fluid text-right">
+							<input type="submit" value="Search" class="btn btn-primary rounded" />
+						</div>
+					</div>
+				</form>
+			</section>
+
+			<table class="rounded table table-striped">
+				<thead>
+					<tr>
+						<th scope="col">No.</th>
+						<th scope="col">
+							<a href="">Testing Organisation ID</a></th>
+						<th scope="col"><a href="">Name of Testing Organisation</a></th>
+						<th scope="col"><a href="">Town or City</a></th>
+						<th scope="col"><a href="">Country</a>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="span1">1</td>
+						<td class="span3">23</td>
+						<td class="span5">Regional Centre for Lighting - Ceylon Electricity Board</td>
+						<td class="span3">Colombo 00700</td>
+						<td class="span2">Sri Lanka</td>
+					</tr>
+					<tr>
+						<td class="span1">2</td>
+						<td class="span3">22</td>
+						<td class="span5">testing seychelles org</td>
+						<td class="span3">ssss</td>
+						<td class="span2">Seychelles</td>
+					</tr>
+					<tr>
+						<td class="span1">3</td>
+						<td class="span3">21</td>
+						<td class="span5">Test of Input testing Org.</td>
+						<td class="span3">Paris</td>
+						<td class="span2">France</td>
+					</tr>
+					<tr>
+						<td class="span1">4</td>
+						<td class="span3">20</td>
+						<td class="span5">Gosei 11</td>
+						<td class="span3">Ha Noi</td>
+						<td class="span2">Vietnam</td>
+					</tr>
+					<tr>
+						<td class="span1">5</td>
+						<td class="span3">19</td>
+						<td class="span5">Gosei 10</td>
+						<td class="span3">Ha Noi</td>
+						<td class="span2">Vietnam</td>
+					</tr>
+					<tr>
+						<td class="span1">6</td>
+						<td class="span3">18</td>
+						<td class="span5">Gosei 10</td>
+						<td class="span3">Ha Noi</td>
+						<td class="span2">Vietnam</td>
+					</tr>
+					<tr>
+						<td class="span1">7</td>
+						<td class="span3">17</td>
+						<td class="span5">Gosei 10</td>
+						<td class="span3">Ha Noi</td>
+						<td class="span2">Vietnam</td>
+					</tr>
+					<tr>
+						<td class="span1">8</td>
+						<td class="span3">16</td>
+						<td class="span5">Tung3</td>
+						<td class="span3">Hanoi</td>
+						<td class="span2">Australia</td>
+					</tr>
+					<tr>
+						<td class="span1">9</td>
+						<td class="span3">15</td>
+						<td class="span5">Tung2</td>
+						<td class="span3">sdsds</td>
+						<td class="span2">Australia</td>
+					</tr>
+					<tr>
+						<td class="span1">10</td>
+						<td class="span3">14</td>
+						<td class="span5">Tung 2016/01/08</td>
+						<td class="span3">ABC</td>
+						<td class="span2">Australia</td>
+					</tr>
+					<tr>
+						<td class="span1">11</td>
+						<td class="span3">13</td>
+						<td class="span5">CLASP</td>
+						<td class="span3">delhi</td>
+						<td class="span2">India</td>
+					</tr>
+					<tr>
+						<td class="span1">12</td>
+						<td class="span3">12</td>
+						<td class="span5">XYZ</td>
+						<td class="span3">aqwew</td>
+						<td class="span2">Australia</td>
+					</tr>
+					<tr>
+						<td class="span1">13</td>
+						<td class="span3">11</td>
+						<td class="span5"> BHTecht</td>
+						<td class="span3">Hanoi</td>
+						<td class="span2">Australia</td>
+					</tr>
+					<tr>
+						<td class="span1">14</td>
+						<td class="span3">10</td>
+						<td class="span5">Foster Testing</td>
+						<td class="span3">The city</td>
+						<td class="span2">Australia</td>
+					</tr>
+					<tr>
+						<td class="span1">15</td>
+						<td class="span3">9</td>
+						<td class="span5">Gosei VN</td>
+						<td class="span3">H</td>
+						<td class="span2">Vietnam</td>
+					</tr>
+					<tr>
+						<td class="span1">16</td>
+						<td class="span3">8</td>
+						<td class="span5">Tung test</td>
+						<td class="span3">Hanoi</td>
+						<td class="span2">Vietnam</td>
+					</tr>
+					<tr>
+						<td class="span1">17</td>
+						<td class="span3">7</td>
+						<td class="span5">Intertek Testing Services (Thailand)</td>
+						<td class="span3">Bangkok 10900</td>
+						<td class="span2">Thailand</td>
+					</tr>
+					<tr>
+						<td class="span1">18</td>
+						<td class="span3">6</td>
+						<td class="span5">Korea Testing Laboratory </td>
+						<td class="span3">Seoul, 152-718</td>
+						<td class="span2">Korea, South</td>
+					</tr>
+					<tr>
+						<td class="span1">19</td>
+						<td class="span3">5</td>
+						<td class="span5">HO CHI MINH CITY TECHNICAL CENTER OF STANDARDS METROLOGY AND QUALITY</td>
+						<td class="span3">HO CHI MINH CITY</td>
+						<td class="span2">Vietnam</td>
+					</tr>
+					<tr>
+						<td class="span1">20</td>
+						<td class="span3">4</td>
+						<td class="span5">Laboratory for testing Energy Efficiency (LABFTEE), VINACOMIN </td>
+						<td class="span3">Ha Noi</td>
+						<td class="span2">Vietnam</td>
+					</tr>
+					<tr>
+						<td class="span1">21</td>
+						<td class="span3">3</td>
+						<td class="span5">QUATEST 3</td>
+						<td class="span3"> DONG NAI</td>
+						<td class="span2">Vietnam</td>
+					</tr>
+					<tr>
+						<td class="span1">22</td>
+						<td class="span3">2</td>
+						<td class="span5">QUATEST 2, Electric and Electronic Laboratory (Technical Section 7)</td>
+						<td class="span3">Da Nang City</td>
+						<td class="span2">Vietnam</td>
+					</tr>
+					<tr>
+						<td class="span1">23</td>
+						<td class="span3">1</td>
+						<td class="span5">QUATEST 1, Electric &#226;€“ Electronic Testing Laboratory</td>
+						<td class="span3">Ha Noi</td>
+						<td class="span2">Vietnam</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="row-fluid text-right">
+				<a href="testorgcreate.html" class="btn btn-primary rounded">Register a Testing Organisation</a>
+			</div>
+
+
+		</article>
+		<footer>
+			<div class="row-fluid">
+				<div class="span5">
+					<h4>A joint initiative of the Australian Government and UNEP</h4>
+					
+				</div>
+				<div class="span7">
+					<div class="row-fluid">
+						<div class="span6">
+							Comments to: ...
+						</div>
+						<div class="span6">
+							Contact number: ...
+						</div>
+					</div>
+					<ul>
+						<li>United Nations Environment Programme (UNEP)</li>
+						<li><a href="under.html">Privacy</a></li>
+						<li><a href="copy.html">Copyright & Disclaimer </a></li>
+						<li class="last-child"><a href="under.html">Sitemap</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+	<div id="loadding">
+		<p><img class="" id="" src="/Images/btn_loading.png" border="0" width="25" /><span></span></p>
+	</div>
+	<div id="loading-bar-overlay" style="display:none;">
+		<div id="loading-bar-spinner">
+			<div class="spinner-icon"></div>
+		</div>
+	</div>
+
+
+
+
+</body>
+
+</html>

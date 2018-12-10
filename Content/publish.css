@@ -1,0 +1,117 @@
+﻿body
+{
+}
+
+
+ul.multiselect-container li.active a .checkbox
+{
+    color: White !important;
+}
+
+li a label.checkbox:hover
+{
+    color: White !important;
+}
+
+button.multiselect
+{
+    color: #555 !important;
+    font-size: 12px !important;
+    font-style: normal !important;
+}
+
+.width_fix_min_width_sale_date
+{
+    min-width: 120px; /* force table to be oversize */
+}
+
+.width_fix_min_width_sale_available
+{
+    min-width: 100px; /* force table to be oversize */
+}
+
+
+.width_fix_min_width_sale_year
+{
+    width: 80px !important; /* force table to be oversize */
+}
+
+.width_fix_min_width
+{
+    min-width: 80px; /* force table to be oversize */
+}
+
+.width_fix_min_width_number
+{
+    min-width: 50px; /* force table to be oversize */
+}
+
+.width_fix_min_width_rf
+{
+    min-width: 270px; /* force table to be oversize */
+}
+
+.width_fix_min_width_rf_v02
+{
+    min-width: 320px; /* force table to be oversize */
+}
+
+.width_fix_min_width_wm
+{
+    min-width: 340px; /* force table to be oversize */
+}
+
+.width_fix_min_width_rc
+{
+    min-width: 340px; /* force table to be oversize */
+}
+
+.width_fix_min_width_tv
+{
+    min-width: 340px; /* force table to be oversize */
+}
+
+.width_fix_min_width_dt
+{
+    min-width: 340px; /* force table to be oversize */
+}
+
+.width_fix_min_width_email_log
+{
+    min-width: 150px; /* force table to be oversize */
+}
+
+
+div.table-responsive
+{
+    width: 1128px;
+    overflow-x: scroll;
+}
+
+table.no-background
+{
+    background: none !important;
+}
+
+.width_100_percentage
+{
+    width: 100% !important;
+}
+
+.width_50_percentage
+{
+    width: 50% !important;
+}
+
+.font-note-model
+{
+    font-style: italic !important;
+    font-weight: normal !important;
+}
+
+table thead a
+{
+    background: url(/images/icon_sortdir.png) no-repeat;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UNEP</title>
+    
+    <meta name="viewport" content="width=device-width" />
+    
+
+
+    
+
+    <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="Content/themes/base/jquery.ui.core.css" rel="stylesheet"/>
+<link href="Content/themes/base/jquery.ui.resizable.css" rel="stylesheet"/>
+<link href="Content/themes/base/jquery.ui.selectable.css" rel="stylesheet"/>
+<link href="Content/themes/base/jquery.ui.accordion.css" rel="stylesheet"/>
+<link href="Content/themes/base/jquery.ui.autocomplete.css" rel="stylesheet"/>
+<link href="Content/themes/base/jquery.ui.button.css" rel="stylesheet"/>
+<link href="Content/themes/base/jquery.ui.dialog.css" rel="stylesheet"/>
+<link href="Content/themes/base/jquery.ui.slider.css" rel="stylesheet"/>
+<link href="Content/themes/base/jquery.ui.tabs.css" rel="stylesheet"/>
+<link href="Content/themes/base/jquery.ui.datepicker.css" rel="stylesheet"/>
+<link href="Content/themes/base/jquery.ui.progressbar.css" rel="stylesheet"/>
+<link href="Content/themes/base/jquery.ui.theme.css" rel="stylesheet"/>
+<link href="Content/colorbox.css" rel="stylesheet"/>
+<link href="Content/bootstrap.min.css" rel="stylesheet"/>
+<link href="Content/bootstrap-multiselect.css" rel="stylesheet"/>
+<link href="Content/prettify.css" rel="stylesheet"/>
+<link href="Content/date-picker.css" rel="stylesheet"/>
+<link href="Content/style.css" rel="stylesheet"/>
+<link href="Content/site.css" rel="stylesheet"/>
+<link href="Content/upload/uploadify.css" rel="stylesheet"/>
+<link href="Content/publish.css" rel="stylesheet"/>
+
+    
+
+
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            
+
+<img src="header/header.png" width="852" height="120" id="logo">
+
+
+<div id="account" class="pull-right">
+    <a href="Login.html" class="rounded btn btn-primary">Login</a>
+
+</div>
+
+<div id="menu" class="rounded">
+    <a href="login.html" class="brand pull-left"><i class="fa fa-home"></i></a>
+    <ul class="nav nav-pills pull-left">
+        <li>
+            <a href="login.html" class="rounded"><i class="icon-lock icon-white"></i> Login</a>
+        </li>
+        <li>
+            <a href="signUp.html" class="rounded"><i class="icon-user icon-white"></i> Register</a>
+        </li>
+        <li>
+            <a href="resetpassword.html" class="rounded"><i class="icon-refresh icon-white"></i> Reset Password</a>
+        </li>
+        <li>
+            <a href="under.html" class="rounded"> News</a>
+        </li>
+        <li>
+            <a href="Policy.html" class="rounded"> Policies</a>
+        </li>
+        <li>
+            <a href="SaveEnergy.html" class="rounded"> Tips to save energy</a>
+        </li>
+        <li>
+            <a href="Help.html" class="rounded"><i class="icon-question-sign icon-white"></i> Help</a>
+        </li>
+
+    </ul>
+   
+</div>
+
+        </header>
+        <ul class="breadcrumb rounded">
+            
+    <a href="/login.html">Home</a>
+
+    
+        &gt;
+    Sign Up
+
+    
+        </ul>
+        <article id="content">
+            
+<script type="text/javascript">
+    $(document).ready(function () {
+        GlobalVeesl.SetFocusField('Type');
+        Account.AutoCompleteEnterprise('Enterprise', 'spanEnterprise', 'Warning: An account has already been opened in the name of this company and a duplicate account should NOT be created (multiple users within your company can use the one account). If you require further assistance on this aspect please contact the regulator (see contact details in the footer of this page)', '0');
+        
+        Account.AutoCompleteBussinessCertificate('Buscert', 'spanBuscert', 'Warning: An account has already been opened in the name of the company that holds this Business certificate number and a duplicate account should NOT be created (multiple users within your company can use the one account). If you require further assistance on this aspect please contact the regulator (see contact details in the footer of this page)', '0');
+    });
+</script>
+<form action="" class="form-horizontal frm-signup" enctype="multipart/form-data" method="post">    <h4 class="title">Applicant Details - Register a new Account</h4>
+    <section>
+        <p>Please fill-in the form below to register a new account. An email will be sent to you containing instructions on how to activate your account and login for the first time. Note : Applicants must be either the Vietnam based manufacturer or the enterprise responsible for the importation of the product to be registered under the Vietnam Energy Efficiency Standrds and Labelling program</p>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span5">
+                    <label class="text-left">
+                        Is your enterprise a manufacturer in Vietnam or an Importer of products
+                    </label>
+                </div>
+                <div class="span2" style="margin-left: 16px;">
+                    <select class="span8 rounded" id="Type" name="Type"><option value="1">Manufacturer</option>
+<option selected="selected" value="2">Importer</option>
+<option value="9">Both</option>
+</select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right"> Name of Company or Enterprise: <span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" data-val="true" data-val-required="Error: This is required input, please complete this field" id="Enterprise" maxlength="100" name="Enterprise" onchange="Account.CheckExistEnterprise(&#39;Enterprise&#39;,&#39;spanEnterprise&#39;,&#39;Warning: An account has already been opened in the name of this company and a duplicate account should NOT be created (multiple users within your company can use the one account). If you require further assistance on this aspect please contact the regulator (see contact details in the footer of this page)&#39;,&#39;0&#39;);" type="text" value="" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="Enterprise" data-valmsg-replace="true"></span>
+                    <span id="spanEnterprise" style="color:Red;"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right"> Street address:<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" data-val="true" data-val-required="Error: This is required input, please complete this field" id="StreeAddr" maxlength="100" name="StreeAddr" type="text" value="" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="StreeAddr" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right"> Town or City:<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" data-val="true" data-val-required="Error: This is required input, please complete this field" id="StreetTown" maxlength="50" name="StreetTown" type="text" value="" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="StreetTown" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right">State or Province:<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" data-val="true" data-val-required="Error: This is required input, please complete this field" id="StreetState" maxlength="50" name="StreetState" type="text" value="" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="StreetState" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right">Country:<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <select class="span5 rounded" id="StreetCountry" name="StreetCountry"><option value="AFG">Afghanistan</option>
+<option value="ALB">Albania</option>
+<option value="ALG">Algeria</option>
+<option value="ASA">American Samoa*</option>
+<option value="AND">Andorra</option>
+<option value="ANG">Angola</option>
+<option value="ANT">Antigua and Barbuda</option>
+<option value="ARG">Argentina</option>
+<option value="ARM">Armenia</option>
+<option value="ARU">Aruba*</option>
+<option selected="selected" value="AUS">Australia</option>
+<option value="ANZ">Australasia</option>
+<option value="AUT">Austria</option>
+<option value="AZE">Azerbaijan</option>
+<option value="BAH">The Bahamas</option>
+<option value="BRN">Bahrain</option>
+<option value="BAN">Bangladesh</option>
+<option value="BAR">Barbados</option>
+<option value="BLR">Belarus</option>
+<option value="BEL">Belgium</option>
+<option value="BIZ">Belize</option>
+<option value="BER">Bermuda*</option>
+<option value="BEN">Benin</option>
+<option value="BHU">Bhutan</option>
+<option value="BOL">Bolivia</option>
+<option value="BIH">Bosnia and Herzegovina</option>
+<option value="BOT">Botswana</option>
+<option value="BRA">Brazil</option>
+<option value="IVB">British Virgin Islands*</option>
+<option value="BRU">Brunei</option>
+<option value="BUL">Bulgaria</option>
+<option value="BUR">Burkina Faso</option>
+<option value="BDI">Burundi</option>
+<option value="CAM">Cambodia</option>
+<option value="CMR">Cameroon</option>
+<option value="CAN">Canada</option>
+<option value="CPV">Cape Verde</option>
+<option value="CAY">Cayman Islands*</option>
+<option value="CAF">Central African Republic</option>
+<option value="CHA">Chad</option>
+<option value="CHI">Chile</option>
+<option value="CHN">China</option>
+<option value="COL">Colombia</option>
+<option value="COM">Comoros</option>
+<option value="CGO">Congo, Republic of the</option>
+<option value="COD">Congo, Democratic</option>
+<option value="COK">Republic of the Cook Islands*</option>
+<option value="CRC">Costa Rica</option>
+<option value="CIV">Cote d&#39;&#39;Ivoire</option>
+<option value="CRO">Croatia</option>
+<option value="CUB">Cuba</option>
+<option value="CYP">Cyprus</option>
+<option value="CZE">Czech Republic</option>
+<option value="DEN">Denmark</option>
+<option value="DJI">Djibouti</option>
+<option value="DMA">Dominica</option>
+<option value="DOM">Dominican Republic</option>
+<option value="TLS">East Timor (Timor-Leste)</option>
+<option value="ECU">Ecuador</option>
+<option value="EGY">Egypt</option>
+<option value="ESA">El Salvador</option>
+<option value="GEQ">Equatorial Guinea</option>
+<option value="ERI">Eritrea</option>
+<option value="EST">Estonia</option>
+<option value="ETH">Ethiopia</option>
+<option value="FIJ">Fiji</option>
+<option value="FIN">Finland</option>
+<option value="FRA">France</option>
+<option value="GAB">Gabon</option>
+<option value="GAM">The Gambia</option>
+<option value="GEO">Georgia</option>
+<option value="GER">Germany</option>
+<option value="GHA">Ghana</option>
+<option value="GRE">Greece</option>
+<option value="GRN">Grenada</option>
+<option value="GUM">Guam*</option>
+<option value="GUA">Guatemala</option>
+<option value="GUI">Guinea</option>
+<option value="GBS">Guinea-Bissau</option>
+<option value="GUY">Guyana</option>
+<option value="HAI">Haiti</option>
+<option value="HON">Honduras</option>
+<option value="HKG">Hong Kong*</option>
+<option value="HUN">Hungary</option>
+<option value="ISL">Iceland</option>
+<option value="IND">India</option>
+<option value="IOA">Individual Olympic athletes</option>
+<option value="INA">Indonesia</option>
+<option value="IRI">Iran</option>
+<option value="IRQ">Iraq</option>
+<option value="IRL">Ireland</option>
+<option value="ISR">Israel</option>
+<option value="ITA">Italy</option>
+<option value="JAM">Jamaica</option>
+<option value="JPN">Japan</option>
+<option value="JOR">Jordan</option>
+<option value="KAZ">Kazakhstan</option>
+<option value="KEN">Kenya</option>
+<option value="PRK">Korea, North&#160;(PDR of Korea)</option>
+<option value="KOR">Korea, South</option>
+<option value="KUW">Kuwait</option>
+<option value="KGZ">Kyrgyzstan</option>
+<option value="LAO">Laos</option>
+<option value="LAT">Latvia</option>
+<option value="LIB">Lebanon</option>
+<option value="LES">Lesotho</option>
+<option value="LBR">Liberia</option>
+<option value="LBA">Libya</option>
+<option value="LIE">Liechtenstein</option>
+<option value="LTU">Lithuania</option>
+<option value="LUX">Luxembourg</option>
+<option value="MKD">Macedonia</option>
+<option value="MAD">Madagascar</option>
+<option value="MAW">Malawi</option>
+<option value="MAL">Malaya</option>
+<option value="MAS">Malaysia</option>
+<option value="MDV">Maldives</option>
+<option value="MLI">Mali</option>
+<option value="MLT">Malta</option>
+<option value="MTN">Mauritania</option>
+<option value="MRI">Mauritius</option>
+<option value="MEX">Mexico</option>
+<option value="FSM">Micronesia (Federated States of)</option>
+<option value="ZZX">Mixed Team&#160;(1896 to 1904)</option>
+<option value="MDA">Moldova</option>
+<option value="MON">Monaco</option>
+<option value="MGL">Mongolia</option>
+<option value="MAR">Morocco</option>
+<option value="MOZ">Mozambique</option>
+<option value="MYA">Myanmar (Burma)</option>
+<option value="NAM">Namibia</option>
+<option value="NRU">Nauru</option>
+<option value="NEP">Nepal</option>
+<option value="NED">Netherlands</option>
+<option value="AHO">Netherlands Antilles*</option>
+<option value="NZL">New Zealand</option>
+<option value="NCA">Nicaragua</option>
+<option value="NIG">Niger</option>
+<option value="NGR">Nigeria</option>
+<option value="NOR">Norway</option>
+<option value="OMA">Oman</option>
+<option value="PAK">Pakistan</option>
+<option value="PLW">Palau</option>
+<option value="PLE">Palestine*</option>
+<option value="PAN">Panama</option>
+<option value="PNG">Papua New Guinea</option>
+<option value="PAR">Paraguay</option>
+<option value="PER">Peru</option>
+<option value="PHI">Philippines</option>
+<option value="POL">Poland</option>
+<option value="POR">Portugal</option>
+<option value="PUR">Puerto Rico*</option>
+<option value="QAT">Qatar</option>
+<option value="ROU">Romania</option>
+<option value="RUS">Russian Federation</option>
+<option value="RWA">Rwanda</option>
+<option value="SKN">Saint Kitts and Nevis</option>
+<option value="LCA">Saint Lucia</option>
+<option value="VIN">Saint Vincent and the Grenadines</option>
+<option value="SAM">Samoa</option>
+<option value="SMR">San Marino</option>
+<option value="STP">Sao Tome and Principe</option>
+<option value="KSA">Saudi Arabia</option>
+<option value="SEN">Senegal</option>
+<option value="SCG">Serbia and Montenegro</option>
+<option value="SEY">Seychelles</option>
+<option value="SLE">Sierra Leone</option>
+<option value="SIN">Singapore</option>
+<option value="SVK">Slovakia</option>
+<option value="SLO">Slovenia</option>
+<option value="SOL">Solomon Islands</option>
+<option value="SOM">Somalia</option>
+<option value="RSA">South Africa</option>
+<option value="ESP">Spain</option>
+<option value="SRI">Sri Lanka</option>
+<option value="SUD">Sudan</option>
+<option value="SUR">Suriname</option>
+<option value="SWZ">Swaziland</option>
+<option value="SWE">Sweden</option>
+<option value="SUI">Switzerland</option>
+<option value="SYR">Syria</option>
+<option value="TPE">Taiwan&#160;(Chinese Taipei)</option>
+<option value="TJK">Tajikistan</option>
+<option value="TAN">Tanzania</option>
+<option value="THA">Thailand</option>
+<option value="TOG">Togo</option>
+<option value="TGA">Tonga</option>
+<option value="TRI">Trinidad and Tobago</option>
+<option value="TUN">Tunisia</option>
+<option value="TUR">Turkey</option>
+<option value="TKM">Turkmenistan</option>
+<option value="UGA">Uganda</option>
+<option value="UKR">Ukraine</option>
+<option value="EUN">Unified Team</option>
+<option value="EUA">Unified Team of Germany</option>
+<option value="UAE">United Arab Emirates</option>
+<option value="RAU">United Arab Republic</option>
+<option value="GBR">United Kingdom (Great Britain)</option>
+<option value="USA">United States</option>
+<option value="URU">Uruguay</option>
+<option value="UZB">Uzbekistan</option>
+<option value="VAN">Vanuatu</option>
+<option value="VEN">Venezuela</option>
+<option value="VIE">Vietnam</option>
+<option value="ISV">Virgin Islands*</option>
+<option value="WIF">West Indies Federation&#160;(Antilles)</option>
+<option value="YEM">Yemen</option>
+<option value="ZAM">Zambia</option>
+<option value="ZIM">Zimbabwe</option>
+</select>
+                    
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right">Postal Code (if applicable):</label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" id="StreetPostcode" maxlength="20" name="StreetPostcode" type="text" value="" />
+                    
+                    <label class="checkbox">
+                        <input data-val="true" data-val-required="The PostSampleAddress field is required." id="PostSampleAddress" name="PostSampleAddress" onclick="Account.ClickCheckBoxPostalAddress();" type="checkbox" value="true" /><input name="PostSampleAddress" type="hidden" value="false" /> Postal address is the same as street address
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="divShowHidePostalAddress">
+            <div class="row-fluid">
+                <div class="control-group">
+                    <div class="span4">
+                        <label class="text-right">Postal address:<span>*</span></label>
+                    </div>
+                    <div class="span8">
+                        <input class="rounded span5" data-val="true" data-val-required="Error: This is required input, please complete this field" id="PostalAddr" maxlength="100" name="PostalAddr" type="text" value="" />
+                        
+                        <span class="field-validation-valid" data-valmsg-for="PostalAddr" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="control-group">
+                    <div class="span4">
+                        <label class="text-right">Town or City:<span>*</span></label>
+                    </div>
+                    <div class="span8">
+                        <input class="rounded span5" data-val="true" data-val-required="Error: This is required input, please complete this field" id="PostalTown" maxlength="50" name="PostalTown" type="text" value="" />
+                        
+                        <span class="field-validation-valid" data-valmsg-for="PostalTown" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="control-group">
+                    <div class="span4">
+                        <label class="text-right">State or Province:<span>*</span></label>
+                    </div>
+                    <div class="span8">
+                        <input class="rounded span5" data-val="true" data-val-required="Error: This is required input, please complete this field" id="PostalState" maxlength="50" name="PostalState" type="text" value="" />
+                        
+                        <span class="field-validation-valid" data-valmsg-for="PostalState" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="control-group">
+                    <div class="span4">
+                        <label class="text-right">Country:<span>*</span></label>
+                    </div>
+                    <div class="span8">
+                        <select class="span5 rounded" id="PostalCountry" name="PostalCountry"><option value="AFG">Afghanistan</option>
+<option value="ALB">Albania</option>
+<option value="ALG">Algeria</option>
+<option value="ASA">American Samoa*</option>
+<option value="AND">Andorra</option>
+<option value="ANG">Angola</option>
+<option value="ANT">Antigua and Barbuda</option>
+<option value="ARG">Argentina</option>
+<option value="ARM">Armenia</option>
+<option value="ARU">Aruba*</option>
+<option selected="selected" value="AUS">Australia</option>
+<option value="ANZ">Australasia</option>
+<option value="AUT">Austria</option>
+<option value="AZE">Azerbaijan</option>
+<option value="BAH">The Bahamas</option>
+<option value="BRN">Bahrain</option>
+<option value="BAN">Bangladesh</option>
+<option value="BAR">Barbados</option>
+<option value="BLR">Belarus</option>
+<option value="BEL">Belgium</option>
+<option value="BIZ">Belize</option>
+<option value="BER">Bermuda*</option>
+<option value="BEN">Benin</option>
+<option value="BHU">Bhutan</option>
+<option value="BOL">Bolivia</option>
+<option value="BIH">Bosnia and Herzegovina</option>
+<option value="BOT">Botswana</option>
+<option value="BRA">Brazil</option>
+<option value="IVB">British Virgin Islands*</option>
+<option value="BRU">Brunei</option>
+<option value="BUL">Bulgaria</option>
+<option value="BUR">Burkina Faso</option>
+<option value="BDI">Burundi</option>
+<option value="CAM">Cambodia</option>
+<option value="CMR">Cameroon</option>
+<option value="CAN">Canada</option>
+<option value="CPV">Cape Verde</option>
+<option value="CAY">Cayman Islands*</option>
+<option value="CAF">Central African Republic</option>
+<option value="CHA">Chad</option>
+<option value="CHI">Chile</option>
+<option value="CHN">China</option>
+<option value="COL">Colombia</option>
+<option value="COM">Comoros</option>
+<option value="CGO">Congo, Republic of the</option>
+<option value="COD">Congo, Democratic</option>
+<option value="COK">Republic of the Cook Islands*</option>
+<option value="CRC">Costa Rica</option>
+<option value="CIV">Cote d&#39;&#39;Ivoire</option>
+<option value="CRO">Croatia</option>
+<option value="CUB">Cuba</option>
+<option value="CYP">Cyprus</option>
+<option value="CZE">Czech Republic</option>
+<option value="DEN">Denmark</option>
+<option value="DJI">Djibouti</option>
+<option value="DMA">Dominica</option>
+<option value="DOM">Dominican Republic</option>
+<option value="TLS">East Timor (Timor-Leste)</option>
+<option value="ECU">Ecuador</option>
+<option value="EGY">Egypt</option>
+<option value="ESA">El Salvador</option>
+<option value="GEQ">Equatorial Guinea</option>
+<option value="ERI">Eritrea</option>
+<option value="EST">Estonia</option>
+<option value="ETH">Ethiopia</option>
+<option value="FIJ">Fiji</option>
+<option value="FIN">Finland</option>
+<option value="FRA">France</option>
+<option value="GAB">Gabon</option>
+<option value="GAM">The Gambia</option>
+<option value="GEO">Georgia</option>
+<option value="GER">Germany</option>
+<option value="GHA">Ghana</option>
+<option value="GRE">Greece</option>
+<option value="GRN">Grenada</option>
+<option value="GUM">Guam*</option>
+<option value="GUA">Guatemala</option>
+<option value="GUI">Guinea</option>
+<option value="GBS">Guinea-Bissau</option>
+<option value="GUY">Guyana</option>
+<option value="HAI">Haiti</option>
+<option value="HON">Honduras</option>
+<option value="HKG">Hong Kong*</option>
+<option value="HUN">Hungary</option>
+<option value="ISL">Iceland</option>
+<option value="IND">India</option>
+<option value="IOA">Individual Olympic athletes</option>
+<option value="INA">Indonesia</option>
+<option value="IRI">Iran</option>
+<option value="IRQ">Iraq</option>
+<option value="IRL">Ireland</option>
+<option value="ISR">Israel</option>
+<option value="ITA">Italy</option>
+<option value="JAM">Jamaica</option>
+<option value="JPN">Japan</option>
+<option value="JOR">Jordan</option>
+<option value="KAZ">Kazakhstan</option>
+<option value="KEN">Kenya</option>
+<option value="PRK">Korea, North&#160;(PDR of Korea)</option>
+<option value="KOR">Korea, South</option>
+<option value="KUW">Kuwait</option>
+<option value="KGZ">Kyrgyzstan</option>
+<option value="LAO">Laos</option>
+<option value="LAT">Latvia</option>
+<option value="LIB">Lebanon</option>
+<option value="LES">Lesotho</option>
+<option value="LBR">Liberia</option>
+<option value="LBA">Libya</option>
+<option value="LIE">Liechtenstein</option>
+<option value="LTU">Lithuania</option>
+<option value="LUX">Luxembourg</option>
+<option value="MKD">Macedonia</option>
+<option value="MAD">Madagascar</option>
+<option value="MAW">Malawi</option>
+<option value="MAL">Malaya</option>
+<option value="MAS">Malaysia</option>
+<option value="MDV">Maldives</option>
+<option value="MLI">Mali</option>
+<option value="MLT">Malta</option>
+<option value="MTN">Mauritania</option>
+<option value="MRI">Mauritius</option>
+<option value="MEX">Mexico</option>
+<option value="FSM">Micronesia (Federated States of)</option>
+<option value="ZZX">Mixed Team&#160;(1896 to 1904)</option>
+<option value="MDA">Moldova</option>
+<option value="MON">Monaco</option>
+<option value="MGL">Mongolia</option>
+<option value="MAR">Morocco</option>
+<option value="MOZ">Mozambique</option>
+<option value="MYA">Myanmar (Burma)</option>
+<option value="NAM">Namibia</option>
+<option value="NRU">Nauru</option>
+<option value="NEP">Nepal</option>
+<option value="NED">Netherlands</option>
+<option value="AHO">Netherlands Antilles*</option>
+<option value="NZL">New Zealand</option>
+<option value="NCA">Nicaragua</option>
+<option value="NIG">Niger</option>
+<option value="NGR">Nigeria</option>
+<option value="NOR">Norway</option>
+<option value="OMA">Oman</option>
+<option value="PAK">Pakistan</option>
+<option value="PLW">Palau</option>
+<option value="PLE">Palestine*</option>
+<option value="PAN">Panama</option>
+<option value="PNG">Papua New Guinea</option>
+<option value="PAR">Paraguay</option>
+<option value="PER">Peru</option>
+<option value="PHI">Philippines</option>
+<option value="POL">Poland</option>
+<option value="POR">Portugal</option>
+<option value="PUR">Puerto Rico*</option>
+<option value="QAT">Qatar</option>
+<option value="ROU">Romania</option>
+<option value="RUS">Russian Federation</option>
+<option value="RWA">Rwanda</option>
+<option value="SKN">Saint Kitts and Nevis</option>
+<option value="LCA">Saint Lucia</option>
+<option value="VIN">Saint Vincent and the Grenadines</option>
+<option value="SAM">Samoa</option>
+<option value="SMR">San Marino</option>
+<option value="STP">Sao Tome and Principe</option>
+<option value="KSA">Saudi Arabia</option>
+<option value="SEN">Senegal</option>
+<option value="SCG">Serbia and Montenegro</option>
+<option value="SEY">Seychelles</option>
+<option value="SLE">Sierra Leone</option>
+<option value="SIN">Singapore</option>
+<option value="SVK">Slovakia</option>
+<option value="SLO">Slovenia</option>
+<option value="SOL">Solomon Islands</option>
+<option value="SOM">Somalia</option>
+<option value="RSA">South Africa</option>
+<option value="ESP">Spain</option>
+<option value="SRI">Sri Lanka</option>
+<option value="SUD">Sudan</option>
+<option value="SUR">Suriname</option>
+<option value="SWZ">Swaziland</option>
+<option value="SWE">Sweden</option>
+<option value="SUI">Switzerland</option>
+<option value="SYR">Syria</option>
+<option value="TPE">Taiwan&#160;(Chinese Taipei)</option>
+<option value="TJK">Tajikistan</option>
+<option value="TAN">Tanzania</option>
+<option value="THA">Thailand</option>
+<option value="TOG">Togo</option>
+<option value="TGA">Tonga</option>
+<option value="TRI">Trinidad and Tobago</option>
+<option value="TUN">Tunisia</option>
+<option value="TUR">Turkey</option>
+<option value="TKM">Turkmenistan</option>
+<option value="UGA">Uganda</option>
+<option value="UKR">Ukraine</option>
+<option value="EUN">Unified Team</option>
+<option value="EUA">Unified Team of Germany</option>
+<option value="UAE">United Arab Emirates</option>
+<option value="RAU">United Arab Republic</option>
+<option value="GBR">United Kingdom (Great Britain)</option>
+<option value="USA">United States</option>
+<option value="URU">Uruguay</option>
+<option value="UZB">Uzbekistan</option>
+<option value="VAN">Vanuatu</option>
+<option value="VEN">Venezuela</option>
+<option value="VIE">Vietnam</option>
+<option value="ISV">Virgin Islands*</option>
+<option value="WIF">West Indies Federation&#160;(Antilles)</option>
+<option value="YEM">Yemen</option>
+<option value="ZAM">Zambia</option>
+<option value="ZIM">Zimbabwe</option>
+</select>
+                        
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="span4">
+                        <label class="text-right">Postal Code (if applicable):</label>
+                    </div>
+                    <div class="span8">
+                        <input class="rounded span5" id="StreetPostcode" maxlength="20" name="StreetPostcode" type="text" value="" />
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right"> Name of parent company or managerial agency: </label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" id="Parent" maxlength="100" name="Parent" type="text" value="" />
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right"> Responsible officers job title:<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" data-val="true" data-val-required="Error: This is required input, please complete this field" id="Title" maxlength="30" name="Title" type="text" value="" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="Title" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right"> Name of responsible officer (first name):<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" data-val="true" data-val-required="Error: This is required input, please complete this field" id="FirstName" maxlength="50" name="FirstName" type="text" value="" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right"> Name of responsible officer (last name):<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" data-val="true" data-val-required="Error: This is required input, please complete this field" id="LastName" maxlength="50" name="LastName" type="text" value="" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right"> Phone:<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5 phone" data-val="true" data-val-required="Error: This is required input, please complete this field" id="Phone" maxlength="20" name="Phone" type="text" value="" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right"> Fax: </label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5 fax" id="Fax" maxlength="20" name="Fax" type="text" value="" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="Fax" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right"> Email address:<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" data-val="true" data-val-required="Error: This is required input, please complete this field" id="Email" maxlength="50" name="Email" onchange="Account.onChangeEmail();" type="text" value="" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right">Business certificate number:<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" data-val="true" data-val-required="Error: This is required input, please complete this field" id="Buscert" maxlength="50" name="Buscert" onchange="Account.CheckExistBussinessCertificate(&#39;Buscert&#39;,&#39;spanBuscert&#39;,&#39;Warning: An account has already been opened in the name of the company that holds this Business certificate number and a duplicate account should NOT be created (multiple users within your company can use the one account). If you require further assistance on this aspect please contact the regulator (see contact details in the footer of this page)&#39;,&#39;0&#39;);" type="text" value="" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="Buscert" data-valmsg-replace="true"></span>
+                    <span id="spanBuscert" style="color:Red;"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right">Business certificate issued by?<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" data-val="true" data-val-required="Error: This is required input, please complete this field" id="Busissue" maxlength="100" name="Busissue" type="text" value="" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="Busissue" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right">Business certificate issue date:<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input type="date" class="span3 date-picker" data-val="true" data-val-required="Error: This is required input, please complete this field" id="BusdateText" name="BusdateText" onchange="javascript:return GlobalVeesl.ValidDateTimeOnChange(&#39;BusdateText&#39;,&#39;spanBusdateText&#39;,&#39;Error: The date is invalid format (yyyy/MM/dd)&#39;);" placeholder="____/__/__" type="text" value="" />
+                    <i class="icon-calendar fa fa-calendar"></i>
+                    <span class="field-validation-valid" data-valmsg-for="BusdateText" data-valmsg-replace="true"></span>
+                    <span id="spanBusdateText" class="message-error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right">User name:<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" id="Username" name="Username" readonly="true" type="text" value="" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="Username" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right">Password (minimum 6 characters):<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" data-val="true" data-val-length="The Password (minimum 6 characters) must be at least 6 characters long." data-val-length-max="50" data-val-length-min="6" data-val-required="Error: This is required input, please complete this field" id="Password" maxlength="50" name="Password" type="password" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right">Confirm password:<span>*</span></label>
+                </div>
+                <div class="span8">
+                    <input class="rounded span5" data-val="true" data-val-equalto="The password and confirmation password do not match." data-val-equalto-other="*.Password" data-val-required="Error: This is required input, please complete this field" id="ConfirmPassword" maxlength="50" name="ConfirmPassword" type="password" />
+                    
+                    <span class="field-validation-valid" data-valmsg-for="ConfirmPassword" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="span4">
+                    <label class="text-right">Remarks: </label>
+                       
+                </div>
+                <div class="span8">
+                    <textarea class="span12 rounded" cols="20" id="Remark" maxlength="2000" name="Remark" rows="10">
+</textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h4 class="title">
+        Required Documentation
+    </h4>
+    <section>
+        <p>The following documents must be uploaded as part of your application. Left mouse click on the &quot;Browser&quot; button next to each item and then using the file browser select and upload the relevant documents. 
+Ideally documents should be in pdf format and wherever possible less than 2MB in size</p>
+        <div class="fileupload">
+            <div class="row-fluid">
+                <div class="control-group">
+                    <label>Business registration certificate:<span>*</span></label>
+                    <div id="divUploadBusreg">
+
+                    </div>
+                    <input type="file" name="file_uploadbusreg" id="file_uploadbusreg" />
+                </div>
+            </div>
+            
+            <div class="row-fluid">
+                <div class="control-group">
+                    <label>Trademark registration certificate:<span>*</span></label>
+                    <div id="divUploadTrademark">
+
+                    </div>
+                    <input type="file" name="file_uploadtrademark" id="file_uploadtrademark" />
+                </div>
+            </div>
+            
+            <div class="row-fluid">
+                <div class="control-group">
+                    <label>Document describing the quality management system of the enterprise including quality management certificates:<span>*</span></label>
+                    <div id="divUploadQM">
+
+                    </div>
+                    <input type="file" name="file_uploadqm" id="file_uploadqm" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="control-group">
+        <input type="submit" value="Submit" onclick="javascript:return Account.ValidDateTime('Error: The date is invalid format (yyyy/MM/dd)');" class="btn btn-primary rounded" />
+    </div>
+</form>
+
+        </article>
+        <footer>
+            <div class="row-fluid">
+    <div class="span5">
+        <h4>A joint initiative of the Australian Government and UNEP</h4>
+       
+    </div>
+    <div class="span7">
+        <div class="row-fluid">
+            <div class="span6">
+                Comments to: ...
+            </div>
+            <div class="span6">
+                Contact number: ...
+            </div>
+        </div>
+        <ul>
+            <li>United Nations Environment Programme (UNEP)</li>
+            <li><a href="unhtml">Privacy</a></li>
+            <li><a href="copy.html">Copyright & Disclaimer </a></li>
+            <li class="last-child"><a href="under.html">Sitemap</a></li>
+        </ul>
+    </div>
+</div>
+
+        </footer>
+    </div>
+    <div id="loadding">
+        <p><img class="" id="" src="/Images/btn_loading.png" border="0" width="25" /><span></span></p>
+    </div>
+    <div id="loading-bar-overlay" style="display:none;">
+        <div id="loading-bar-spinner">
+            <div class="spinner-icon"></div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+   
+
+
+</body>
+
+
+</html>
